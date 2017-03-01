@@ -1,2 +1,2 @@
-# Ski_The_Globe
-Thesis project 
+# Ski The Globe
+3/1/2017
