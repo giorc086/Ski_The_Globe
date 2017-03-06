@@ -20,7 +20,7 @@ db.once('open',function(){
 	        	let newResort = new Resort({
 	        		id: resort.id,
 	        		resortName: resort.resortName,
-	        		resortTemp: 0 //this is set to 0 when the database first runs and will get updated once you run update-temp on terminal 
+	        		// resortTemp: 0 //this is set to 0 when the database first runs and will get updated once you run update-temp on terminal 
 	        	});
 	        	Resort.find({id:resort.id}, function(err,documents) {
 

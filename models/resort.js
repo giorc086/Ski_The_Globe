@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const resortSchema = mongoose.Schema({
 	id: Number,
 	resortName: String,
-	resortTemp: Number,
+	resortTerrain: Object, //part of the module that gets updated by update-profile
+	resortSnowreport: Object, //part of the module that gets updated by update-profile
 	updatedAt: Date,
 	createdAt: Date
 });
