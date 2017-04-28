@@ -3,22 +3,42 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ski The Globe</title>
-    <link rel="stylesheet" type="text/css" href="style/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski The Globe - Home</title>
+    <link rel="stylesheet" type="text/css" href="style/styleIndex.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-  <div id="searcharea">
-      <h1>Ski The Globe</h1>
-      <input type="search" name="search" id="search" placeholder="Search resorts" disabled>
-  </div>
-  <div class="results">
-  </div>
-  <div id='temp'></div>
-
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script/script.js"></script>
+    <div id="background">
+        <nav>
+            <img id='logo' src=images/logo.png>
+            <a href="">About</a>
+        </nav>
+        <div class="headings">
+            <h1>Find the best ski resorts for you.</h1>
+            <!--     takes input from field and removes the spaces inbetween names -->
+            <form id='myForm' onsubmit="
+            window.location = search.value.replace(/\s/g,'') +'.html'; 
+            return false;
+            ">
+                <input id="search" class="tags" placeholder="Search for resorts" type="search" name="search"></input>
+                <input id="searchBtn" type="submit" value="Search">
+            </form>
+            <h3>Discover resorts on the map</h3>
+            <img id='arrowIcon' src="images/arrowIcon.png">
+        </div>
+    </div>
+    <!-- MAP -->
+    <div id="map_wrapper">
+        <div id="map_canvas" class="mapping"></div>
+    </div>
+    <script type="text/javascript" src="script/scriptIndex.js"></script>
+    <footer>
+        <p>&copy; <a href="www.ceciliagiorcelli.com">2017 Cecilia Giorcelli.</a></p>
+    </footer>
 </body>
 
 </html>

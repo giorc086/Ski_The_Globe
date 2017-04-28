@@ -1,0 +1,395 @@
+/*Mobile*/
+
+@media screen and (min-width: 320px) {
+	nav {
+		padding: 15px 10px 5px;
+		background-color: #F6F8F9;
+	}
+	nav a{
+		text-decoration: none;
+		color: #313131;
+	}
+	#logo {
+		height: 45px;
+		width: auto;
+	}
+	#headerTop p {
+		float: right;
+		font-size: .7em;
+		padding-top: 5px;
+	}
+	#searchBar {
+		float: right;
+		padding: 15px 15px;
+	}
+	#sticky {
+		width: 100%;
+		background-color: white;
+		border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+	}
+	#sticky h1 {
+		font-size: 42px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+	}
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 14px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 14px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+	#searchBtn {
+		background-color: #FF989D;
+		border: none;
+		font-size: 10px;
+		padding: 5px 6px;
+		border-radius: 6px;
+		color: white;
+	}
+
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+	}
+	#search {
+		width: 130px;
+	}
+	#main {
+		width: 95%;
+	}
+	#conditions,
+	#averageQuality,
+	#maps,
+	.clear {
+		clear: both;
+	}
+	div.data {
+		float: left;
+		margin: 0px 10% 10% 10%;
+		width: 30%;
+		min-height: 150px;
+		text-align: center;
+	}
+	div.special {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	div.split {
+		width: 50%;
+		margin: 0;
+		height: 100px;
+		float: left;
+	}
+	div.split2 {
+		width: 50%;
+		height: 100px;
+		float: left;
+	}
+	div.conditions {
+		width: 30%;
+		height: 150px;
+		float: left;
+		text-align: center;
+	}
+	div.manIcon {
+		width: 40%;
+		float: left;
+		text-align: center;
+	}
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 20px;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+	#pKey {
+		font-size: 11px;
+	}
+	h4 {
+		padding: 0;
+	}
+	div#main {
+		margin-top: 50px;
+		margin-left: 3%;
+	}
+	#smileList {
+		height: auto;
+		width: 100%;
+	}
+	#smileKey {
+		height: 35px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	#resortStatistics div.data h4 {
+		min-height: 50px;
+	}
+	#googleMap {
+		height: 300px;
+		width: 100%;
+	}
+	#trailMap {
+		height: 300px;
+		width: 100%;
+	}
+}
+
+@charset "UTF-8";
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, sans-serif;
+}
+
+footer {
+	text-align: center;
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width: 768px) {
+	header .imgContainer {
+		display: block;
+	}
+	header .resortName {
+		margin-left: 0%;
+		margin-right: 0%;
+		float: left;
+	}
+	header .searchBar {
+		display: block;
+		width: 25%;
+		float: right;
+	}
+	#resortStatistics div.data {
+		float: left;
+		margin: 0px 5%;
+		width: 10%;
+		/*	min-height: 100px;*/
+		text-align: center;
+	}
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 100px;
+		background-color: ;
+	}
+	div.special {
+		width: 50%;
+		float: left;
+		margin-bottom: 10%;
+	}
+	#smileKey {
+		height: 50px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	#searchBtn {
+		background-color: #FF989D;
+		border: none;
+		font-size: 14px;
+		padding: 5px 6px;
+		border-radius: 6px;
+		color: white;
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width: 1000px) {
+	nav {
+		padding: 15px 100px 5px;
+		background-color: #F6F8F9;
+	}
+	#logo {
+		height: 55px;
+		width: auto;
+	}
+	#headerTop p {
+		float: right;
+		font-size: .7em;
+		padding-top: 5px;
+	}
+	#searchBar {
+		float: Right;
+		padding: 15px 15px;
+	}
+	#sticky {
+		width: 100%;
+		background-color: white;
+		border-bottom: 1px solid #CACACA;
+		box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.1);
+	}
+	#sticky h1 {
+		font-size: 60px;
+		margin: 2px 0px 0px 0px;
+		padding: 0;
+		color: #10416A;
+		font-style: italic;
+	}
+	#sticky h2 {
+		margin: 0px 0px 15px 0px;
+		padding: 0;
+		font-size: 20px;
+		color: gray;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	#sticky {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		/*	border-bottom: 1px solid gray;*/
+	}
+	#sticky.stick {
+		margin-top: 0 !important;
+		position: fixed;
+		top: 0;
+		z-index: 10000;
+	}
+	h3 {
+		font-weight: bold;
+		font-size: 16px;
+		color: #313131;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CACACA;
+	}
+	ul#ui-id-1 {
+		padding: 10px;
+		width: 130px;
+		background-color: white;
+		border-radius: 6px;
+		list-style-type: none;
+	}
+	#search {
+		width: 150px;
+	}
+	#main {
+		width: 88%;
+	}
+	#conditions,
+	#averageQuality,
+	#maps,
+	.clear {
+		clear: both;
+	}
+	header h1 {
+		font-style: italic;
+		color: #10416A;
+	}
+	div.data {
+		float: left;
+		margin: 0px 10% 10% 10%;
+		width: 30%;
+		/*	min-height: 100px;*/
+		text-align: center;
+	}
+	div.special {
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	div.split {
+		width: 50%;
+		margin: 0;
+		height: 100px;
+		float: left;
+	}
+	div.split2 {
+		width: 50%;
+		height: 100px;
+		float: left;
+	}
+	div.conditions {
+		width: 30%;
+		height: 150px;
+		float: left;
+		text-align: center;
+	}
+	div.manIcon {
+		width: 40%;
+		float: left;
+		text-align: center;
+	}
+	#resortStatistics div.placeholder {
+		width: 100%;
+		height: 20px;
+		background-color: ;
+	}
+	#conditions div.placeholder {
+		width: 100%;
+		height: 50px;
+		background-color: ;
+	}
+	#pKey {
+		font-size: 12px;
+	}
+	h4 {
+		padding: 0;
+	}
+	div#main {
+		margin-top: 50px;
+		margin-left: 100px;
+	}
+	#smileList {
+		height: auto;
+		width: 50%;
+	}
+	#smileKey {
+		height: 50px;
+		width: auto;
+		float: left;
+		margin-right: 15px;
+	}
+	#trailMap,
+	#googleMap {
+		width: 50%;
+		height: 500px;
+	}
+	#maps {
+		width: 100%;
+	}
+}

@@ -1,0 +1,244 @@
+  /*Mobile*/
+  @media only screen and (min-width: 400px) and (max-width: 768px){
+    header {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      height: 100px;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid gray;
+    }
+    .table {
+      width: 50%;
+      float: left;
+    }
+    #charts div {
+      width: 100%;
+      text-align: center;
+    }
+    #conditions div {
+      /* width: 33.33%; */
+      /* height: 260px; */
+      /* float: left; */
+      text-align: center;
+    }
+    #maps iframe {
+      width: 100%;
+      height: 400px;
+      clear: both;
+    }
+    #mapImage img {
+      width: 100%;
+      height: auto;
+    }
+
+    #pieChart{
+      height:auto;
+      width:30%;
+    }
+
+    #mountainIcon {
+      height: auto;
+      width: 18%;
+      float: left;
+    }
+
+    #manIcon img {
+      height: auto;
+      width: 35%;
+    }
+    #houseIcon {
+      height: auto;
+      width: 25%;
+      margin-right: 20%;
+    }
+
+    #sunIcon{
+      height:auto;
+      width: 20%;
+    }
+
+    #smileKeyIcon{
+      height:auto;
+      width: 28%;
+    }
+  }
+  /*Tablet*/
+  
+  @media only screen and (min-width: 768px) {
+    header {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      height: 100px;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid gray;
+    }
+    .table {
+      width: 20%;
+      float: left; /*
+      font-size: 12px; */
+    }
+    #charts div {
+      width: 50%;
+      margin-top: 2%;
+      text-align: center;
+    }
+    #conditions div {
+      /* width: 30%; */
+      /* float: left; */
+      text-align: center;
+    }
+    #maps iframe {
+      width: 50%;
+      height: 400px;
+      float: left;
+    }
+    #mapImage img {
+      width: 50%;
+      height: 400px;
+    }
+
+    #pieChart{
+      height:auto;
+      width:150px;
+    }
+
+    #mountainIcon {
+      height: auto;
+      width: 90px;
+      float: left;
+    }
+    #manIcon img {
+      height: auto;
+      width: 70px;
+    }
+    #avgSnowfallTxt {
+      float: left;
+      width: 30%;
+      margin-left: 20%;
+    }
+    #houseIcon {
+      height: auto;
+      width: 130px;
+      margin-right: 20%;
+    }
+
+    #sunIcon{
+      height:auto;
+      width: 80px;
+    }
+    #smileKeyIcon{
+      height:auto;
+      width: 120px;
+      float: left;
+    }
+
+
+  }
+  /*Desktop*/
+  
+  @media only screen and (min-width: 1000px) {}
+  
+  html,
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header h1 {
+    color: #10416A;
+    margin: 0;
+    padding: 0;
+   font-weight: 700;
+    font-size: 54px;
+  }
+  
+  header h2 {
+    color: #777777;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  h6{
+      font-size: 12px;
+      font-weight: 400;
+    }
+  
+  nav {
+    background-color: lightyellow;
+    height: 100px;
+    width: 100%;
+  }
+  
+  nav a {
+    float: right;
+  }
+  
+  #container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+  }
+  
+  #container h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  section {
+    clear: both;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  .comparebutton {
+    text-align: center;
+  }
+
+  .wide { width: 70%; margin-left: auto; margin-right: auto; }
+
+
+  #resortStatistics div {
+    text-align: center;
+  }
+
+  #elevation {padding-top: 45px;}
+
+  #elevation div { width: 30%; margin: 0;}
+  
+  #elevation p {
+    text-align: left;
+    margin: 3px;
+  }
+  
+  #conditions div.weather {
+    width: 100%;
+    clear: both;
+    margin-top: 5%;
+  }
+#snowdepth { height: 100%;}
+  #snowdepth div { float: left; width: 30%;}
+  #snowfall {clear: both;}
+
+#mountainTop {margin-left: auto; margin-right: 10%;}
+#mountainBottom {margin-left: 10%; margin-right: auto;}
+  .imgMargin { margin-left: 30px}
+  
+  #seasons {
+    text-align: center;
+  }
+
+#logo{
+  width: auto;
+  height: 60%;
+}
+

@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison</title>
+  <link href="style/stylesheet2.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+  ul#ui-id-1 {
+    padding: 10px;
+    width: 130px;
+    background-color: white;
+  }
+  
+  #search {
+    width: 150px;
+  }
+  
+  #columnLeft,
+  #columnRight {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+  
+  div#main {
+    margin-top: 0px;
+  }
+  
+  #columnLeft h2,
+  #columnRight h2 {
+    text-align: center;
+  }
+  
+  .resortPicker {
+    text-align: center;
+  }
+  
+  #container {
+    margin-top: 300px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    #resortStatistics div.data {
+      float: left;
+      margin: 0px 5%;
+      width: 20%;
+      min-height: 150px;
+      text-align: center;
+    }
+    div.special {
+      width: 100%;
+      float: left;
+      margin-bottom: 10%;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    #container {
+      margin-top: 200px;
+    }
+    #resortStatistics div.data {
+      float: left;
+      margin: 0px 5%;
+      width: 10%;
+      min-height: 150px;
+      text-align: center;
+    }
+    div.special {
+      width: 50%;
+      float: left;
+      margin-bottom: 10%;
+    }
+  }
+  
+  footer {
+    clear: both;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="imgContainer">
+      <a href="index.html"><img src="images/logo.png" height="60px" width="auto"></a>
+    </div>
+    <div class="resortName">
+      <h2></h2>
+    </div>
+    <div class="searchBar">
+      <h5>Find the best ski resorts for you</h5>
+      <form id="searchArea" onsubmit="window.location = '' + search.value +'.html'; return false;">
+        <input id="search" class="tags" placeholder="Search" type="search" name="search"></input>
+        <input id="searchBtn" type="submit" value="Search">
+      </form>
+    </div>
+  </header>
+  <div id="container">
+    <div id="columnLeft">
+      <div class="resortPicker">
+        <input type="search">
+        <button>Choose a Different Resort</button>
+      </div>
+      <h2>Aspen</h2>
+      <div id="main">
+        <div id="resortStatistics">
+          <h2>Resort Statistics</h2>
+          <hr>
+          <div class="data">
+            <h4>Open<br/>Runs</h4>
+            <p>98/126</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Open<br/>Lifts</h4>
+            <p>28/30</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Longest Run</h4>
+            <p>3 mi</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Ticket Prices</h4>
+            <p>$$$</p>
+            <div class="placeholder"></div>
+          </div>
+          <div class="data">
+            <h4>Skiable Acres</h4>
+            <p>5,290</p>
+            <div class="placeholder"></div>
+          </div>
+          <div class="special clear">
+            <h4>Run Levels</h4><img src="images/pieChart.png" height="100px" width="auto"></div>
+          <div class="special">
+            <h4>Elevation</h4><img src="images/mountainIcon.png" height="100px" width="auto">
+          </div>
+        </div>
+        <div id="conditions">
+          <h2>Conditions</h2>
+          <hr>
+          <div class="data">
+            <h4>Snow Depth Mountain<br />Top</h4>
+            <p>58 in</p>
+          </div>
+          <div class="data">
+            <h4>Snow Depth Mountain <br />Bottom</h4>
+            <p>54 in</p>
+          </div>
+          <div class="data">
+            <h4>Average Snowfall Per Year</h4>
+            <p>170 in</p>
+            <div class="placeholder"><img src="images/houseIcon.png" height="100%" width="auto"></div>
+          </div>
+          <div class="data">
+            <h4>Average Sunny Days Per Year</h4>
+            <p>230</p>
+            <div class="placeholder"><img src="images/sunIcon.png" height="100%" width="auto"></div>
+          </div>
+        </div>
+        <div id="averageQuality">
+          <h2>Average Skiing Day Quality Per Month</h2>
+          <hr>
+          <div><img src="images/smileKey.png" height="50px" width="auto" style="float: left; margin-right: 15px;">
+            <p>The weather conditions used to categroize the quality of a day are: wind, temperature, snow pack and visibility.</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="images/smileImg.png" id="smileList"></div>
+        </div>
+        <div id="maps">
+          <h2>Maps</h2>
+          <hr>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49471.22968806233!2d-106.87182995744169!3d39.198542699135736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8740397cf7413c7d%3A0xc12b42dc782cf672!2sAspen%2C+CO+81611!5e0!3m2!1sen!2sus!4v1491752595216&t=p" frameborder="0" height="300px" width="100%" style="border:0; float: left;" allowfullscreen></iframe>
+          <img src="https://www.aspensnowmass.com/~/media/aspensnowmass/trail-maps/2015_snowmass_winter_high.ashx" height="300px" width="100%">
+        </div>
+      </div>
+    </div>
+    <div id="columnRight">
+      <div class="resortPicker">
+        <input type="search">
+        <button>Choose a Different Resort</button>
+      </div>
+      <h2>Breckenridge</h2>
+      <div id="main">
+        <div id="resortStatistics">
+          <h2>Resort Statistics</h2>
+          <hr>
+          <div class="data">
+            <h4>Open<br/>Runs</h4>
+            <p>98/126</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Open<br/>Lifts</h4>
+            <p>28/30</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Longest Run</h4>
+            <p>3 mi</p>
+            <div class="placeholder">
+              <svg height="10px" width="100%">
+                <rect height="10px" width="100%" style="fill: #CFCFCF" />
+                <rect height="10px" width="70%" style="fill: #10416A" />
+              </svg>
+            </div>
+          </div>
+          <div class="data">
+            <h4>Ticket Prices</h4>
+            <p>$$$</p>
+            <div class="placeholder"></div>
+          </div>
+          <div class="data">
+            <h4>Skiable Acres</h4>
+            <p>5,290</p>
+            <div class="placeholder"></div>
+          </div>
+          <div class="special clear">
+            <h4>Run Levels</h4><img src="images/pieChart.png" height="100px" width="auto"></div>
+          <div class="special">
+            <h4>Elevation</h4><img src="images/mountainIcon.png" height="100px" width="auto">
+          </div>
+        </div>
+        <div id="conditions">
+          <h2>Conditions</h2>
+          <hr>
+          <div class="data">
+            <h4>Snow Depth Mountain<br />Top</h4>
+            <p>58 in</p>
+          </div>
+          <div class="data">
+            <h4>Snow Depth Mountain <br />Bottom</h4>
+            <p>54 in</p>
+          </div>
+          <div class="data">
+            <h4>Average Snow Fall Per Year</h4>
+            <p>170 in</p>
+            <div class="placeholder"><img src="images/houseIcon.png" height="100%" width="auto"></div>
+          </div>
+          <div class="data">
+            <h4>Average Sunny Days Per Year</h4>
+            <p>230</p>
+            <div class="placeholder"><img src="images/sunIcon.png" height="100%" width="auto"></div>
+          </div>
+        </div>
+        <div id="averageQuality">
+          <h2>Average Skiing Day Quality Per Month</h2>
+          <hr>
+          <div><img src="images/smileKey.png" height="50px" width="auto" style="float: left; margin-right: 15px;">
+            <p>The weather conditions used to categroize the quality of a day are: wind, temperature, snow pack and visibility.</p>
+          </div>
+          <div style="text-align: center;">
+            <img src="images/smileImg.png" id="smileList"></div>
+        </div>
+        <div id="maps">
+          <h2>Maps</h2>
+          <hr>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49471.22968806233!2d-106.87182995744169!3d39.198542699135736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8740397cf7413c7d%3A0xc12b42dc782cf672!2sAspen%2C+CO+81611!5e0!3m2!1sen!2sus!4v1491752595216&t=p" frameborder="0" height="300px" width="100%" style="border:0; float: left;" allowfullscreen></iframe>
+          <img src="https://www.aspensnowmass.com/~/media/aspensnowmass/trail-maps/2015_snowmass_winter_high.ashx" height="300px" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; <a href="www.ceciliagiorcelli.com">2017 Cecilia Giorcelli.</a></p>
+  </footer>
+  <script type="text/javascript" src="script/scriptHome.js"></script>
+</body>
+
+</html>
