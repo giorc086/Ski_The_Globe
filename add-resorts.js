@@ -12,9 +12,9 @@ let db = mongoose.connection
 var token = '?token=a5bae8eea465aae8f096ad0b775121a6702a31e6eb2686d8'
 
 db.once('open', function() {
-	console.log('Connection to DB made!') //tests if connection has been made to db
+	console.log('Connection to DB made!') // tests if connection has been made to db
 	request('http://clientservice.onthesnow.com/externalservice/region/251/list' + token + '&language=en&country=US', function(error, response, body) {
-		if (!error && response.statusCode == 200) {
+		if (!error && response.statusCode === 200) {
 			var object = parser.parse(body)
 			for (let resort of object.resorts) {
 				let newResort = new Resort({
@@ -22,8 +22,7 @@ db.once('open', function() {
 					resortName: resort.resortName
 					// resortTemp: 0 //this is set to 0 when the database first runs and will get updated once you run update-temp on terminal 
 				})
-				Resort.find({ id: resort.id }, function(err, documents) {
-
+				Resort.find({ id: resort.id }, function (err, documents) {
 					if (documents.length === 0) { // saves to db
 						newResort.save(function(err) {
 							if (err) {
@@ -34,7 +33,6 @@ db.once('open', function() {
 						})
 					}
 				})
-
 			}
 		}
 	})

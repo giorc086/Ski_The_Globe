@@ -3,19 +3,18 @@ var app = express() // define our app using express
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/on-the-snow-2')	// connects to db on-the-snow-2
+// mongoose.connect('mongodb://localhost/on-the-snow-2')	// connects to db on-the-snow-2
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/on-the-snow-2')
 
 var Resort = require('./models/resort')
 
-// configure app to use bodyParser()
-// this will let us get the data from a POST
+// configure app to use bodyParser() -> this will let us get the data from a POST
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use(express.static('public'))
 var port = process.env.PORT || 3000 // set our port
 
 // ROUTES FOR OUR API
-// =============================================================================
 var router = express.Router() // get an instance of the express Router
 
 // middleware to use for all requests
@@ -52,11 +51,9 @@ router.route('/resort/:id')
 		})
 	})
 
-// REGISTER OUR ROUTES -------------------------------
-// all of our routes will be prefixed with /api
+// REGISTER OUR ROUTES:all of our routes will be prefixed with /api 
 app.use('/api', router)
 
 // START THE SERVER
-// =============================================================================
 app.listen(port)
 console.log('Magic happens on port ' + port)
